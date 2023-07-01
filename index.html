@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tip Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sanchez&family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Tip Calculator</h1>
+    <p>The form below may be used to calculate how much you should tip.</p>
+  </header>
+  <main>
+    <form>
+      <fieldset>
+        <legend>Enter the numeric value of your bill total.</legend>
+        <input id="billTotal" name="billTotal" type="number" placeholder="ex: 55.83">
+      </fieldset>
+      <fieldset>
+        <legend>Select the button showing the percentage you'd like to tip.</legend>
+        <button id="highTip" class="tipButton" type="button" value="0.2">20%</button>
+        <button id="midTip" class="tipButton" type="button" value="0.175">17.5%</button>
+        <button id="lowTip" class="tipButton" type="button" value="0.15">15%</button>
+      </fieldset>
+      <fieldset>
+        <legend>Tip Output</legend>
+        <output class="output">The amount that should be left as a tip on your bill will appear hear.</output>
+      </fieldset>
+    </form>
+    <!-- <section class="output"></section> -->
+  </main>
+  <footer>
+    <p>Let's get to Tipping!</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
